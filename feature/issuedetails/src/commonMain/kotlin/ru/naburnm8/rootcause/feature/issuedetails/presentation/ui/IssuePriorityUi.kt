@@ -1,11 +1,11 @@
-package ru.naburnm8.rootcause.feature.omnitracker.presentation.ui
+package ru.naburnm8.rootcause.feature.issuedetails.presentation.ui
 
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.graphics.Color
 import ru.naburnm8.rootcause.core.ds.error
 import ru.naburnm8.rootcause.core.ds.muted
 import ru.naburnm8.rootcause.core.ds.warning
-import ru.naburnm8.rootcause.feature.omnitracker.model.IssuePriority
+import ru.naburnm8.rootcause.feature.issuedetails.model.IssuePriority
 
 
 val IssuePriority.title: String

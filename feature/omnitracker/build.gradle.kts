@@ -69,6 +69,7 @@ kotlin {
                 implementation(libs.androidx.lifecycle.runtimeCompose)
 
                 implementation(projects.core)
+                implementation(projects.feature.issuedetails)
             }
         }
 

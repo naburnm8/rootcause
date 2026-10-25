@@ -1,4 +1,4 @@
-package ru.naburnm8.rootcause.feature.omnitracker.presentation.ui
+package ru.naburnm8.rootcause.feature.issuedetails.presentation.ui
 
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.clickable
@@ -12,12 +12,10 @@ import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.LinearProgressIndicator
-import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
@@ -25,17 +23,14 @@ import androidx.compose.ui.unit.sp
 import ru.naburnm8.rootcause.core.ds.accent
 import ru.naburnm8.rootcause.core.ds.border
 import ru.naburnm8.rootcause.core.ds.elevated
-import ru.naburnm8.rootcause.core.ds.error
 import ru.naburnm8.rootcause.core.ds.muted
 import ru.naburnm8.rootcause.core.ds.success
 import ru.naburnm8.rootcause.core.ds.surface
-import ru.naburnm8.rootcause.core.ds.warning
-import ru.naburnm8.rootcause.feature.omnitracker.model.IssuePriority
-import ru.naburnm8.rootcause.feature.omnitracker.model.IssueStatus
-import ru.naburnm8.rootcause.feature.omnitracker.presentation.uimodel.IssueUiModel
+import ru.naburnm8.rootcause.feature.issuedetails.model.IssueStatus
+import ru.naburnm8.rootcause.feature.issuedetails.presentation.uimodel.IssueUiModel
 
 @Composable
-internal fun IssueCard(
+fun IssueSmallCard(
     issue: IssueUiModel,
     onClick: () -> Unit
 ) {
@@ -74,16 +69,5 @@ internal fun IssueCard(
                 )
             }
         }
-    }
-}
-
-@Composable
-private fun StatusBadge(
-    status: IssueStatus
-) {
-    val color = status.containerColor
-    Surface(color = color.copy(alpha = .14f), shape = RoundedCornerShape(8.dp)) {
-        Text(status.title, color = color, fontSize = 11.sp, fontWeight = FontWeight.SemiBold,
-            modifier = Modifier.padding(horizontal = 9.dp, vertical = 5.dp))
     }
 }

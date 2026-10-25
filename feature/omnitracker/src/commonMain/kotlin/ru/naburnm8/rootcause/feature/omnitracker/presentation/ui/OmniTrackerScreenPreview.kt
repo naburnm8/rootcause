@@ -3,10 +3,10 @@ package ru.naburnm8.rootcause.feature.omnitracker.presentation.ui
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.tooling.preview.Preview
 import ru.naburnm8.rootcause.core.ds.RootCauseTheme
-import ru.naburnm8.rootcause.feature.omnitracker.model.IssuePriority
-import ru.naburnm8.rootcause.feature.omnitracker.model.IssueStatus
+import ru.naburnm8.rootcause.feature.issuedetails.model.IssuePriority
+import ru.naburnm8.rootcause.feature.issuedetails.model.IssueStatus
 import ru.naburnm8.rootcause.feature.omnitracker.presentation.uimodel.DeveloperUiModel
-import ru.naburnm8.rootcause.feature.omnitracker.presentation.uimodel.IssueUiModel
+import ru.naburnm8.rootcause.feature.issuedetails.presentation.uimodel.IssueUiModel
 
 private val previewIssues = listOf(
     IssueUiModel(

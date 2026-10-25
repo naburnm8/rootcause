@@ -1,11 +1,11 @@
-package ru.naburnm8.rootcause.feature.omnitracker.presentation.ui
+package ru.naburnm8.rootcause.feature.issuedetails.presentation.ui
 
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.graphics.Color
 import ru.naburnm8.rootcause.core.ds.accent
 import ru.naburnm8.rootcause.core.ds.muted
 import ru.naburnm8.rootcause.core.ds.success
-import ru.naburnm8.rootcause.feature.omnitracker.model.IssueStatus
+import ru.naburnm8.rootcause.feature.issuedetails.model.IssueStatus
 
 val IssueStatus.title: String
     @Composable get() = when (this) {

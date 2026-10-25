@@ -41,11 +41,13 @@ import ru.naburnm8.rootcause.core.ds.border
 import ru.naburnm8.rootcause.core.ds.elevated
 import ru.naburnm8.rootcause.core.ds.muted
 import ru.naburnm8.rootcause.core.ds.surface
-import ru.naburnm8.rootcause.feature.omnitracker.model.IssueStatus
+import ru.naburnm8.rootcause.feature.issuedetails.model.IssueStatus
+import ru.naburnm8.rootcause.feature.issuedetails.presentation.ui.title
+import ru.naburnm8.rootcause.feature.issuedetails.presentation.ui.IssueSmallCard
 import ru.naburnm8.rootcause.feature.omnitracker.presentation.tab.TrackerBottomBar
 import ru.naburnm8.rootcause.feature.omnitracker.presentation.tab.TrackerTab
 import ru.naburnm8.rootcause.feature.omnitracker.presentation.uimodel.DeveloperUiModel
-import ru.naburnm8.rootcause.feature.omnitracker.presentation.uimodel.IssueUiModel
+import ru.naburnm8.rootcause.feature.issuedetails.presentation.uimodel.IssueUiModel
 
 @Composable
 fun OmniTrackerScreen(
@@ -90,7 +92,7 @@ fun OmniTrackerScreen(
                 item { Text("No issues with this status", color = muted) }
             } else {
                 items(visibleIssues, key = { it.id }) { issue ->
-                    IssueCard(issue = issue, onClick = { onIssueClick(issue) })
+                    IssueSmallCard(issue = issue, onClick = { onIssueClick(issue) })
                 }
             }
         }

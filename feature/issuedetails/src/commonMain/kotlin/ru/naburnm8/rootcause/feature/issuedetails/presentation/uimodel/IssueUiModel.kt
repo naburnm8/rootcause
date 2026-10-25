@@ -1,7 +1,7 @@
-package ru.naburnm8.rootcause.feature.omnitracker.presentation.uimodel
+package ru.naburnm8.rootcause.feature.issuedetails.presentation.uimodel
 
-import ru.naburnm8.rootcause.feature.omnitracker.model.IssuePriority
-import ru.naburnm8.rootcause.feature.omnitracker.model.IssueStatus
+import ru.naburnm8.rootcause.feature.issuedetails.model.IssuePriority
+import ru.naburnm8.rootcause.feature.issuedetails.model.IssueStatus
 
 data class IssueUiModel(
     val id: String,
