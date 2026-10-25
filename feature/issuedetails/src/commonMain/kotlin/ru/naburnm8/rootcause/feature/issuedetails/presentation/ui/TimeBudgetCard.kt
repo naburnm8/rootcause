@@ -26,8 +26,14 @@ import ru.naburnm8.rootcause.core.ds.text
 import ru.naburnm8.rootcause.core.ds.warning
 
 @Composable
-internal fun TimeBudgetCard(spentMinutes: Int, softDeadlineMinutes: Int, hardDeadlineMinutes: Int) {
+internal fun TimeBudgetCard(
+    modifier: Modifier = Modifier,
+    spentMinutes: Int,
+    softDeadlineMinutes: Int,
+    hardDeadlineMinutes: Int
+) {
     Card(
+        modifier = modifier,
         shape = RoundedCornerShape(16.dp),
         colors = CardDefaults.cardColors(containerColor = surface),
         border = BorderStroke(1.dp, border)
